@@ -3,7 +3,7 @@
 代码核心是WordsCrossBuilder类，其他代码用于构建嵌入Jetty的WEB微服务。
 
 可在IDE中直接运行Main.class，或按dist目录下的USAGE说明来启动服务。然后在浏览器中访问，如：
-![web page]()
+![web page](https://raw.githubusercontent.com/xuzhigang01/words-cross_java/master/h5.jpg)
 > 可多点几次build按钮，查看不同的结果
 
 
