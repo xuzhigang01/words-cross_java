@@ -4,7 +4,7 @@
 
 可在IDE中直接运行Main.class，或按dist目录下的USAGE说明来启动服务。然后在浏览器中访问，如：
 ![web page](https://raw.githubusercontent.com/xuzhigang01/words-cross_java/master/h5.jpg)
-*可多点几次build按钮，查看不同的结果*
+<br/>*可多点几次build按钮，查看不同的结果*
 
 #### 交叉单词矩阵生成步骤：
 1. 根据单词总长度、最长单词长度、最短单词长度等，计算出初始矩阵尺寸，生成了一个空矩阵。乱序后的单词将逐一放置到矩阵里。
