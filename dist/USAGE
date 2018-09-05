@@ -1,0 +1,19 @@
+Words-Cross server
+-------------------------------
+
+# This words-cross.jar I built on JDK1.8, so need JRE1.8 or above to run it.
+# You can build it with your own JDK version.
+
+run:
+  java -jar words-cross.jar -p 8080 -b html
+
+  # p: port, server listens on this port, default is 8080
+  # b: resource base, web(html/js/css) root dir
+
+stop:
+  Ctrl + c    or    kill -9 {PID}
+
+access:
+  http://localhost:8080/
+
+
