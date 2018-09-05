@@ -73,21 +73,23 @@ td {
 
 		function buildCross() {
 			$.ajax('buildcross', {
-				type: 'POST',
-				data: {words: $('#words').val()},
-				cache: false,
-				success: function(data) {
+				type : 'POST',
+				data : {
+					words : $('#words').val()
+				},
+				cache : false,
+				success : function(data) {
 					$('.error').addClass('hidden');
 					showCross(data);
 				},
-				error: function(jqXHR, textStatus, errorThrown) {
+				error : function(jqXHR, textStatus, errorThrown) {
 					$('#size').text('');
 					$('#crossTable>tbody').html('');
 					$('.error').html(jqXHR.responseText).removeClass('hidden');
 				}
 			});
 		}
-		
+
 		function showCross(data) {
 			$('#size').text(data.width + ' x ' + data.height);
 
@@ -106,7 +108,8 @@ td {
 				var o = words[i];
 				var w = o.w, x = o.x, y = o.y, d = o.d;
 				for ( var j in w) {
-					$('#crossTable>tbody').find('#td-' + x + '-' + y).addClass('content').text(w[j]);
+					$('#crossTable>tbody').find('#td-' + x + '-' + y).addClass(
+							'content').text(w[j]);
 					d == 0 ? x++ : y++;
 				}
 			}
